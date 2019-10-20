@@ -30,6 +30,7 @@ ___
 | > User Stories 	|       	|                                           	|
 |----------------	|-------	|-------------------------------------------	|
 | dev/td         	| 001   	| Ionic Shell                               	|
+| dev/td         	| 002   	| CRUD Implementation with todo-api            	|
 
 ___
 

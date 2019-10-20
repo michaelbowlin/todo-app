@@ -6,4 +6,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <div *ngFor="let todo of todos | async">
+    <strong>{{todo.title}}</strong>
+    <ion-icon name="create"></ion-icon>
+
+    <ion-icon name="trash"></ion-icon> |
+  </div> 
+</ion-content>

@@ -1,3 +1,11 @@
+// export const environment = {
+//   production: true
+// };
+
+// REMOVE
 export const environment = {
-  production: true
+  production: false,
+
+  // URL of development API
+  apiUrl: 'http://localhost:8080'
 };
