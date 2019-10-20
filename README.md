@@ -14,13 +14,18 @@
 
 ___
 
-## Branches and User Stories
+## Branches
 
 | > Branches     	|       	|                                           	|
 |----------------	|-------	|-------------------------------------------	|
 | Releases       	| 1.0.0 	| Release branch                            	|
 | Intg           	| 1.0.0 	| Integration branch                        	|
-| Dev            	| xxx   	| Development branches base on user stories 	|
+| Dev            	| xxx   	| Development branches based on user-stories 	|
+
+
+___
+
+## User Stories
 
 | > User Stories 	|       	|                                           	|
 |----------------	|-------	|-------------------------------------------	|
