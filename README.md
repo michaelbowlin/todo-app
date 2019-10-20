@@ -16,12 +16,15 @@ ___
 
 ## Branches and User Stories
 
-| :::> Branches     |       |             |
-|-------------------|-------|-------------|
-| Releases          | 1.0.0 |             |
-| Intg              | 1.0.0 |             |
-| :::> User Stories |       |             |
-| dev/td            | 001   | Ionic Shell |
+| > Branches     	|       	|                                           	|
+|----------------	|-------	|-------------------------------------------	|
+| Releases       	| 1.0.0 	| Release branch                            	|
+| Intg           	| 1.0.0 	| Integration branch                        	|
+| Dev            	| xxx   	| Development branches base on user stories 	|
+
+| > User Stories 	|       	|                                           	|
+|----------------	|-------	|-------------------------------------------	|
+| dev/td         	| 001   	| Ionic Shell                               	|
 
 ___
 
