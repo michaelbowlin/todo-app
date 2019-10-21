@@ -27,9 +27,18 @@ ___
 
 ## User Stories
 
-| > User Stories 	|       	|                                           	|
-|----------------	|-------	|-------------------------------------------	|
-| dev/td         	| 001   	| Ionic Shell                               	|
+| > User Stories 	|       	|       	                |                                           |
+|----------------	|-------	|-------	                |-------------------------------------------	
+| dev/td         	| 001    	|   :thumbsup:              | Ionic Shell                               |
+| dev/td         	| 002    	|   :thumbsup:              | CRUD Implementation - GET and DELETE      |
+| dev/td         	| 003    	|   :heavy_minus_sign:	    | CRUD Implementation - POST and UPDATE     |
+| dev/td         	| 004    	|   :heavy_minus_sign: 	    | Modal comfirmation on DELETE              |
+| dev/td         	| 005    	|   :heavy_minus_sign: 	    | Layout, stying and branding               |
+| dev/td         	| 006    	|   :heavy_minus_sign: 	    | Infinite Scrolling                        |
+| dev/td         	| 007    	|   :heavy_minus_sign:	    | Implement Linting                         |
+| dev/td         	| 008    	|   :heavy_minus_sign:	    | Implement Unit Tests                      |
+| dev/td         	| 009    	|   :heavy_minus_sign:	    | Implement E2E Tests                       |
+| dev/td         	| 010    	|   :heavy_minus_sign:	    | Reordering of todos via drag & drop       |
 
 ___
 
