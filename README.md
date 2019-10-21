@@ -27,11 +27,11 @@ ___
 
 ## User Stories
 
-| > User Stories 	|       	|       	|                                           |
-|----------------	|-------	|-------	|-------------------------------------------	
-| dev/td         	| 001    	|   √	    | Ionic Shell                               |
-| dev/td         	| 002    	|   √	    | CRUD Implementation - GET and DELETE      |
-| dev/td         	| 003    	|    	    | CRUD Implementation - POST and UPDATE     |
+| > User Stories 	|       	|       	           |                                           |
+|----------------	|-------	|-------	           |-------------------------------------------	
+| dev/td         	| 001    	|   √	               | Ionic Shell                               |
+| dev/td         	| 002    	|   :heavy_check_mark: | CRUD Implementation - GET and DELETE      |
+| dev/td         	| 003    	|    	               | CRUD Implementation - POST and UPDATE     |
 | dev/td         	| 004    	|    	    | Modal comfirmation on DELETE              |
 | dev/td         	| 005    	|    	    | Layout, stying and branding               |
 | dev/td         	| 006    	|    	    | Implement Linting                         |
