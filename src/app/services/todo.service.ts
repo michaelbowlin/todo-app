@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map, zip } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
@@ -10,6 +10,13 @@ const API_URL = environment.apiUrl;
 })
 export class TodoService {
 
+  readonly httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      Accept: 'application/json'
+    })
+  };
+
   constructor(private http: HttpClient) { }
 
   fetchTodos(): Observable<any> {
@@ -19,10 +26,15 @@ export class TodoService {
       .pipe(
         map((data) => {
           return data;
-          debugger;
-
         })
       )
-    // .catch(this.handleError); 
+  }
+
+  deleteTodo(id: number): Observable<any> {
+    const url = API_URL + '/todos?_id=' + id;
+    return this.http.delete(url, this.httpOptions)
+      .pipe(map((data: any) => {
+        debugger;
+      }))
   }
 }

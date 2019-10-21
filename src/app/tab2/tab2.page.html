@@ -10,7 +10,7 @@
   <ion-grid fixed>
       <ion-row>
         <!-- xs, sm, md, lg, xl -->
-        <ion-col *ngFor="let todo of todos | async"
+        <ion-col *ngFor="let todo of todos"
                  size="12"
                  sizeXs="12"
                  sizeSm="6"
@@ -25,7 +25,7 @@
                       </ion-col>
                       <ion-col>
                           <ion-icon name="create"></ion-icon>
-                          <ion-icon name="trash"></ion-icon>
+                          <ion-icon name="trash" (click)="deleteTodo(todo._id)"></ion-icon>
                       </ion-col>
                     </ion-row>
               </ion-card-subtitle>
