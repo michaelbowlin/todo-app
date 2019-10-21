@@ -29,8 +29,15 @@ ___
 
 | > User Stories 	|       	|                                           	|
 |----------------	|-------	|-------------------------------------------	|
-| dev/td         	| 001   	| Ionic Shell                               	|
-| dev/td         	| 002   	| CRUD Implementation with todo-api            	|
+| dev/td         	| 001 - √	| Ionic Shell                               	|
+| dev/td         	| 002 - √	| CRUD Implementation - GET and DELETE        |
+| dev/td         	| 003   	| CRUD Implementation - POST and UPDATE       |
+| dev/td         	| 004   	| Modal comfirmation on DELETE                |
+| dev/td         	| 005   	| Layout, stying and branding                 |
+| dev/td         	| 006   	| Implement Linting                           |
+| dev/td         	| 007   	| Implement Unit Tests                        |
+| dev/td         	| 008   	| Implement E2E Tests                         |
+| dev/td         	| 009   	| Reordering of todos via drag & drop         |
 
 ___
 
