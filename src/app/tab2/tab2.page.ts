@@ -12,7 +12,6 @@ export class Tab2Page implements OnInit {
 
   todos: any = [];
  
-  
   constructor(
     private todoService: TodoService,
     public modalController: ModalController
@@ -20,16 +19,20 @@ export class Tab2Page implements OnInit {
 
   ngOnInit() {
     this.getTodos();
-    // );
+    // );s
   }
 
   async presentModal() {
     const modal = await this.modalController.create({
       component: AddTodoModalComponent,
-      componentProps: {
-        'firstName': 'Douglas',
-        'lastName': 'Adams',
-        'middleInitial': 'N'
+      // componentProps: {
+      //   'firstName': 'Douglas',
+      //   'lastName': 'Adams',
+      //   'middleInitial': 'N'
+      // }
+      componentProps: { 
+        foo: 'hello',
+        bar: 'world'
       }
     });
     return await modal.present();

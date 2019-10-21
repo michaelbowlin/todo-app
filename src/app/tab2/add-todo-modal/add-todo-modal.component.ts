@@ -7,22 +7,17 @@ import { Tab2Page } from '../tab2.page';
   templateUrl: './add-todo-modal.component.html',
   styleUrls: ['./add-todo-modal.component.scss'],
 })
-export class AddTodoModalComponent {
+export class AddTodoModalComponent implements OnInit {
 
-  // Data passed in by componentProps
-  @Input() firstName: string;
-  @Input() lastName: string;
-  @Input() middleInitial: string;
+  @Input() foo: any;
+  @Input() bar: any;
 
   constructor(public modalController: ModalController) {
-    this.firstName = "Fozzy";
+
   }
 
-  async presentModal() {
-    const modal = await this.modalController.create({
-      component: Tab2Page
-    });
-    return await modal.present();
+  ngOnInit() {
+    console.log(`${this.foo} ${this.bar}`)
   }
 
   dismiss() {
