@@ -21,7 +21,7 @@ ___
 | dev/td         	| 002    	|   :thumbsup:              | CRUD Implementation - GET and DELETE      |
 | dev/td         	| 003    	|   :thumbsup:      	    | CRUD Implementation - POST                |
 | dev/td         	| 004    	|   :heavy_minus_sign:	    | CRUD Implementation - UPDATE              |
-| dev/td         	| 005    	|   :heavy_minus_sign: 	    | Layout, stying and branding               |
+| dev/td         	| 005    	|   :thumbsup:      	    | Layout, stying and branding               |
 | dev/td         	| 006    	|   :heavy_minus_sign: 	    | Infinite Scrolling                        |
 | dev/td         	| 007    	|   :heavy_minus_sign:	    | Implement Linting                         |
 | dev/td         	| 008    	|   :heavy_minus_sign:	    | Implement Unit Tests                      |
