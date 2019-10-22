@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="secondary">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="md-close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      Modal
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-row>
+            <ion-col size="12">
+              <ion-item>
+                <ion-label position="floating" required>{{title}}</ion-label>
+                <ion-input formControlName="title"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <ion-item> 
+                <ion-label position="floating" required>{{description}}</ion-label>
+                <ion-textarea formControlName="description" rows="8" cols="20"></ion-textarea>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <ion-item>
+                <ion-label position="floating" required>{{filters}}</ion-label>
+                <ion-input formControlName="filters"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="10" offset="1" class="ion-text-center">
+                <ion-button shape="round" fill="outline" type="submit">Outline + Round</ion-button>                
+            </ion-col>
+          </ion-row>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>

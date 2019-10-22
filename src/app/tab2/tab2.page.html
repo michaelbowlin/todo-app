@@ -1,0 +1,42 @@
+<ion-content>
+  <ion-row>
+    <ion-col size="10" offset="1" color="light">
+      <h1>Home Buying TODO's</h1>
+    </ion-col>
+  </ion-row>
+  <ion-grid fixed>
+    <section class="spacer-large"></section>
+    <ion-row>
+      <!-- xs, sm, md, lg, xl -->
+      <ion-col *ngFor="let todo of todos" size="12" sizeXs="12" sizeSm="6" sizeMd="4" sizeLg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>
+              <ion-row>
+                <ion-col size="8">
+                  {{todo.title}}
+                </ion-col>
+                <ion-col>
+                  <ion-icon name="create"></ion-icon>
+                  <ion-icon name="trash" (click)="deleteTodo(todo._id)"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-card-subtitle>
+            <ion-card-title>
+              {{todo.title}}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{todo.title}}
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab (click)="presentModal()" vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
