@@ -15,11 +15,6 @@ ___
 
 ## User Stories
 
-<<<<<<< HEAD
-| > User Stories 	|       	|                                           	|
-|----------------	|-------	|-------------------------------------------	|
-| dev/td         	| 001   	| Ionic Shell                               	|
-=======
 | > User Stories 	|       	|       	                |                                           |
 |----------------	|-------	|-------	                |-------------------------------------------	
 | dev/td         	| 001    	|   :thumbsup:              | Ionic Shell                               |
@@ -32,7 +27,6 @@ ___
 | dev/td         	| 008    	|   :heavy_minus_sign:	    | Implement Unit Tests                      |
 | dev/td         	| 009    	|   :heavy_minus_sign:	    | Implement E2E Tests                       |
 | dev/td         	| 010    	|   :heavy_minus_sign:	    | Reordering of todos via drag & drop       |
->>>>>>> 33217776cf696a24c7ad06e14afeba079c89080c
 
 ___
 
