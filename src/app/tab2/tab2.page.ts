@@ -11,7 +11,7 @@ import { AddTodoModalComponent } from './add-todo-modal/add-todo-modal.component
 export class Tab2Page implements OnInit {
 
   todos: any = [];
- 
+
   constructor(
     private todoService: TodoService,
     public modalController: ModalController
@@ -30,12 +30,20 @@ export class Tab2Page implements OnInit {
       //   'lastName': 'Adams',
       //   'middleInitial': 'N'
       // }
-      componentProps: { 
-        foo: 'hello',
-        bar: 'world'
+      componentProps: {
+        title: 'Title',
+        description: 'Description',
+        filters: 'Filters'
       }
     });
-    return await modal.present();
+
+    modal.onDidDismiss()
+    .then((data) => {
+      debugger;
+      const user = data['data']; // Here's your selected user!
+  });
+
+  return await modal.present();
   }
 
   getTodos(): void {
@@ -47,7 +55,7 @@ export class Tab2Page implements OnInit {
       () => console.log('getTodos completed')
     );
   }
-  
+
   deleteTodo(todoID: number): void {
     this.todoService.deleteTodo(todoID).subscribe(_ => {
       this.getTodos();
@@ -55,6 +63,11 @@ export class Tab2Page implements OnInit {
       err => console.error(err),
       () => console.log('deleteTodo completed')
     )
+  }
+
+  goof(data: any): void {
+    console.log(data);
+    debugger;
   }
 
 
