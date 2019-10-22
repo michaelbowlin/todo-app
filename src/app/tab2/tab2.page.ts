@@ -19,17 +19,11 @@ export class Tab2Page implements OnInit {
 
   ngOnInit() {
     this.getTodos();
-    // );s
   }
 
   async presentModal() {
     const modal = await this.modalController.create({
       component: AddTodoModalComponent,
-      // componentProps: {
-      //   'firstName': 'Douglas',
-      //   'lastName': 'Adams',
-      //   'middleInitial': 'N'
-      // }
       componentProps: {
         title: 'Title',
         description: 'Description',
@@ -38,12 +32,19 @@ export class Tab2Page implements OnInit {
     });
 
     modal.onDidDismiss()
-    .then((data) => {
-      debugger;
-      const user = data['data']; // Here's your selected user!
-  });
+      .then((data) => {
+        const newTodo = data['data'];
+        this.todoService.createTodo(newTodo).subscribe(
+          data => {
+            this.getTodos();
+          },
+          err => console.error(err),
+          () => console.log('createTodos completed')
+        )
 
-  return await modal.present();
+      });
+
+    return await modal.present();
   }
 
   getTodos(): void {
@@ -64,11 +65,4 @@ export class Tab2Page implements OnInit {
       () => console.log('deleteTodo completed')
     )
   }
-
-  goof(data: any): void {
-    console.log(data);
-    debugger;
-  }
-
-
 }
