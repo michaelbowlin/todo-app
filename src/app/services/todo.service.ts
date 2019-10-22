@@ -34,16 +34,15 @@ export class TodoService {
     const url = API_URL + '/todo';
     return this.http.post(url, inputs, this.httpOptions)
       .pipe(map((data: any) => {
-        debugger;
+
       }))
   }
 
   deleteTodo(id: number): Observable<any> {
-    debugger;
     const url = API_URL + '/todos?_id=' + id;
     return this.http.delete(url, this.httpOptions)
       .pipe(map((data: any) => {
-        debugger;
+
       }))
   }
 }

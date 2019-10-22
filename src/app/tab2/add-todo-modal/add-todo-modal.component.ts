@@ -14,14 +14,14 @@ export class AddTodoModalComponent implements OnInit {
   @Input() description: String;
   @Input() filters: String;
   @Output() passEntry: EventEmitter<any> = new EventEmitter();
-  
+
   todoForm: FormGroup;
 
   constructor(
     public modalController: ModalController
-    ) {}
+  ) { }
 
-  ngOnInit() { 
+  ngOnInit() {
     this.todoForm = new FormGroup({
       title: new FormControl(),
       description: new FormControl(),
@@ -32,5 +32,9 @@ export class AddTodoModalComponent implements OnInit {
 
   onSubmit(): void {
     this.modalController.dismiss(this.todoForm.value);
+  }
+
+  dismiss(): void {
+    this.modalController.dismiss();
   }
 }

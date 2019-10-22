@@ -34,14 +34,18 @@ export class Tab2Page implements OnInit {
     modal.onDidDismiss()
       .then((data) => {
         const newTodo = data['data'];
-        this.todoService.createTodo(newTodo).subscribe(
-          data => {
-            this.getTodos();
-          },
-          err => console.error(err),
-          () => console.log('createTodos completed')
-        )
-
+        debugger;
+        if (newTodo === undefined) {
+          return;
+        } else {
+          this.todoService.createTodo(newTodo).subscribe(
+            data => {
+              this.getTodos();
+            },
+            err => console.error(err),
+            () => console.log('createTodos completed')
+          )
+        }
       });
 
     return await modal.present();
