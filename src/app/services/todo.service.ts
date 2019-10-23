@@ -30,11 +30,19 @@ export class TodoService {
       )
   }
 
+  createTodo(inputs: any): Observable<any> {
+    const url = API_URL + '/todo';
+    return this.http.post(url, inputs, this.httpOptions)
+      .pipe(map((data: any) => {
+
+      }))
+  }
+
   deleteTodo(id: number): Observable<any> {
     const url = API_URL + '/todos?_id=' + id;
     return this.http.delete(url, this.httpOptions)
       .pipe(map((data: any) => {
-        debugger;
+
       }))
   }
 }
