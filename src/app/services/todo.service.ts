@@ -21,11 +21,13 @@ export class TodoService {
 
   fetchTodos(): Observable<any> {
     const data = {};
+    debugger;
     return this.http
       .get(API_URL + '/todos')
       .pipe(
         map((data) => {
           return data;
+          debugger;
         })
       )
   }

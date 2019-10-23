@@ -53,6 +53,7 @@ export class Tab2Page implements OnInit {
   getTodos(): void {
     this.todoService.fetchTodos().subscribe(
       data => {
+        debugger;
         return this.todos = data;
       },
       err => console.error(err),

@@ -10,6 +10,8 @@
         bottom: 0;
         width: 100%;
       }
+
+
     }
 
     &-top {
@@ -31,25 +33,3 @@
     }
   }
 }
-
-// @media only screen and (min-width: 767px) {
-//     .td-tabs {
-//         &-desktop {
-//             display: block
-//         }
-//         &-mobile {
-//             display: none
-//         }
-//     }
-// }
-
-// @media only screen and (max-width: 768px) {
-//     .td-tabs {
-//         &-desktop {
-//             display: none;
-//         }
-//         &-mobile {
-//             display: block;
-//         }
-//     }
-// }

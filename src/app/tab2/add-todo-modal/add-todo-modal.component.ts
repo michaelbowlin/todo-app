@@ -11,7 +11,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class AddTodoModalComponent implements OnInit {
 
   @Input() title: String;
-  @Input() description: String;
+  @Input() notes: String;
   @Input() filters: String;
   @Output() passEntry: EventEmitter<any> = new EventEmitter();
 
@@ -24,7 +24,7 @@ export class AddTodoModalComponent implements OnInit {
   ngOnInit() {
     this.todoForm = new FormGroup({
       title: new FormControl(),
-      description: new FormControl(),
+      notes: new FormControl(),
       filters: new FormControl()
     })
 

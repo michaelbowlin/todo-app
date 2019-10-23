@@ -31,3 +31,27 @@
 .spacer-large {
     height: 80px;
 }
+
+ion-content {
+    &.td-bg-blue-gradient {
+      position: relative;
+      --background: linear-gradient(to left, #66c6e1, #687bff);
+    
+      &:before {
+        position: fixed;
+        content: "";
+        left: -3em;
+        bottom: -3em;
+        z-index: 1;
+        height: 100%;
+        width: 150%;
+        opacity: 0.2;
+        background: linear-gradient(15deg, #385988 50%, #79a5df 50.1%);
+      }
+    
+      ion-row {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }

@@ -1,32 +1,39 @@
 ion-card {
-  // background: #457fca;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to top, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to top, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: #f3f3f3;
+  padding-bottom: 30px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-}
+  border-radius: 14px;
 
-ion-content {
-  position: relative;
-  --background: linear-gradient(to left, #66c6e1, #687bff);
-
-  &:before {
-    position: fixed;
-    content: "";
-    left: -3em;
-    bottom: -3em;
-    z-index: 1;
-    height: 100%;
-    width: 150%;
-    opacity: 0.2;
-    background: linear-gradient(15deg, #385988 50%, #79a5df 50.1%);
-  }
-
-  ion-row {
-    position: relative;
-    z-index: 2;
+  &-content {
+    height: 200px;
+    overflow: auto;
+    background: rgb(228, 228, 228);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
   }
 }
 
+@media only screen and (max-width: 900px) {
+  ion-fab-button {
+    position: fixed !important;
+    bottom: 72px !important;
+    right: 22px !important;
+  }
+  .td-header-desktop {
+    display: none;
+  }
+  .td-header-mobile {
+    display: block;
+    overflow:hidden;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .td-header-mobile {
+    display: none;
+  }
+}
+ 
 
 
