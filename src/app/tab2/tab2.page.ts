@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { TodoService } from '../services/todo.service';
 import { ModalController } from '@ionic/angular';
 import { AddTodoModalComponent } from './add-todo-modal/add-todo-modal.component';
@@ -34,7 +34,6 @@ export class Tab2Page implements OnInit {
     modal.onDidDismiss()
       .then((data) => {
         const newTodo = data['data'];
-        debugger;
         if (newTodo === undefined) {
           return;
         } else {
