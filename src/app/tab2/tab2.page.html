@@ -1,0 +1,55 @@
+<ion-content class="td-bg-blue-gradient">
+  <span class="td-header-desktop">
+    <section class="spacer-large"></section>
+    <section class="spacer-large"></section>
+    <ion-row>
+      <ion-col size="10" offset="1" color="light">
+
+      </ion-col>
+    </ion-row>
+  </span>
+  <span class="td-header-mobile">
+    <ion-header class="ion-text-center">
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <img src="./../../assets/caliber-home-loans-logo.png"
+            alt="Caliber Home Loans - Logo" height="100px" width="auto">
+        </ion-col>
+      </ion-row>
+    </ion-header>
+  </span>
+  <ion-grid fixed>
+    <ion-row>
+      <!-- xs, sm, md, lg, xl -->
+      <ion-col *ngFor="let todo of todos" size="12" sizeXs="12" sizeSm="6" sizeMd="4" sizeLg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>
+              <ion-row>
+                <ion-col size="10">
+                  <ion-icon name="star-outline"></ion-icon>
+                  TODO:
+                </ion-col>
+                <ion-col>
+                  <ion-icon name="trash" color="primary" (click)="deleteTodo(todo._id)"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-card-subtitle>
+            <ion-card-title>
+              {{todo.title}}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{todo.notes}}
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab (click)="presentModal()" vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
