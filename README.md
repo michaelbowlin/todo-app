@@ -1,4 +1,4 @@
-# TODO APP
+# Caliber Home Loans - Sample Todo App
 ___
 
 ![Image description](https://github.com/michaelbowlin/todo-app/blob/dev/td-005/src/assets/Caliber-Todo-App.png)
