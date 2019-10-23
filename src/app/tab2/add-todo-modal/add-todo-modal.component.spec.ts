@@ -2,7 +2,6 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AddTodoModalComponent } from './add-todo-modal.component';
 
-
 describe('AddTodoModalComponent', () => {
   let component: AddTodoModalComponent;
   let fixture: ComponentFixture<AddTodoModalComponent>;

@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -26,32 +26,35 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 
-// Placeholder
-
 .spacer-large {
-    height: 80px;
+  height: 80px;
+}
+
+ion-header.primary {
+  height: 112px;
+  background: #fff;
 }
 
 ion-content {
-    &.td-bg-blue-gradient {
+  &.td-bg-blue-gradient {
+    position: relative;
+    --background: linear-gradient(to left, #66c6e1, #687bff);
+
+    &:before {
+      position: fixed;
+      content: "";
+      left: -3em;
+      bottom: -3em;
+      z-index: 1;
+      height: 100%;
+      width: 150%;
+      opacity: 0.2;
+      background: linear-gradient(15deg, #385988 50%, #79a5df 50.1%);
+    }
+
+    ion-row {
       position: relative;
-      --background: linear-gradient(to left, #66c6e1, #687bff);
-    
-      &:before {
-        position: fixed;
-        content: "";
-        left: -3em;
-        bottom: -3em;
-        z-index: 1;
-        height: 100%;
-        width: 150%;
-        opacity: 0.2;
-        background: linear-gradient(15deg, #385988 50%, #79a5df 50.1%);
-      }
-    
-      ion-row {
-        position: relative;
-        z-index: 2;
-      }
+      z-index: 2;
     }
   }
+}

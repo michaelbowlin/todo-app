@@ -53,3 +53,4 @@ ionic serve
 ## Built With
 
 * [Ionic 4](https://beta.ionicframework.com/docs/)
+* [Angular 8]()

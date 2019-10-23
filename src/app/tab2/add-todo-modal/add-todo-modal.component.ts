@@ -27,7 +27,6 @@ export class AddTodoModalComponent implements OnInit {
       notes: new FormControl(),
       filters: new FormControl()
     })
-
   }
 
   onSubmit(): void {
