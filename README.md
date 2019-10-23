@@ -1,18 +1,7 @@
-# TODO API
-
-> Table of Contents:
->
-> 1. Patterns and Ionic CSS Variables
->    - [Pattern Library]()
-> 2. Branding
->    - [Logos]()
->    - [Colors]()
-> 3. Components
->    - [Ionic Components](src/app/lib/patterns/ionic-components)
->    - [Custom Internal Components](src/app/lib/patterns/atoms/cu-loader)
->    - [Angular Web Components](src/app/lib/patterns)
-
+# Caliber Home Loans - Sample Todo App
 ___
+
+![Image description](https://github.com/michaelbowlin/todo-app/blob/dev/td-005/src/assets/Caliber-Todo-App.png)
 
 ## Branches
 
@@ -27,9 +16,18 @@ ___
 
 ## User Stories
 
-| > User Stories 	|       	|                                           	|
-|----------------	|-------	|-------------------------------------------	|
-| dev/td         	| 001   	| Ionic Shell                               	|
+| > User Stories 	|       	|       	                |                                           |
+|----------------	|-------	|-------	                |-------------------------------------------	
+| dev/td         	| 001    	|   :thumbsup:              | Ionic Shell                               |
+| dev/td         	| 002    	|   :thumbsup:              | CRUD Implementation - GET and DELETE      |
+| dev/td         	| 003    	|   :thumbsup:      	    | CRUD Implementation - POST                |
+| dev/td         	| 004    	|   :heavy_minus_sign:	    | CRUD Implementation - UPDATE              |
+| dev/td         	| 005    	|   :thumbsup:      	    | Layout, stying and branding               |
+| dev/td         	| 006    	|   :heavy_minus_sign: 	    | Infinite Scrolling                        |
+| dev/td         	| 007    	|   :heavy_minus_sign:	    | Implement Linting                         |
+| dev/td         	| 008    	|   :heavy_minus_sign:	    | Implement Unit Tests                      |
+| dev/td         	| 009    	|   :heavy_minus_sign:	    | Implement E2E Tests                       |
+| dev/td         	| 010    	|   :heavy_minus_sign:	    | Reordering of todos via drag & drop       |
 
 ___
 
@@ -55,3 +53,4 @@ ionic serve
 ## Built With
 
 * [Ionic 4](https://beta.ionicframework.com/docs/)
+* [Angular 8]()
